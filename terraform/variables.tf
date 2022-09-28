@@ -26,3 +26,7 @@ variable "prv_vpc1_sub_cidr" {
 variable "vpc_peer_owner_id" {
   type = string
 }
+
+variable "vpc_peering_namespace" {
+  type = string
+}

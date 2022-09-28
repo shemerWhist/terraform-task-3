@@ -23,3 +23,12 @@ variable "prv_vpc2_sub_cidr" {
 variable "vpc_peer_owner_id" {
   type = string
 }
+
+variable "vpc_peering_namespace" {
+  type = string
+}
+
+variable "region" {
+  type = string
+  
+}
