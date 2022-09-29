@@ -16,5 +16,5 @@ vpc_peering_namespace = "shemer-task3-peering"
 
 # ec2
 type = "t2.micro"
-key = "key-for-task"
- 
+key  = "key-for-task"
+

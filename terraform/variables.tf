@@ -32,13 +32,13 @@ variable "vpc_peering_namespace" {
 }
 
 variable "type" {
-    type = string
+  type = string
 }
 
 variable "key" {
-    type = string
+  type = string
 }
 
 # variable "" {
-  
+
 # }

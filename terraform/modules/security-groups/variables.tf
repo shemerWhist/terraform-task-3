@@ -1,10 +1,10 @@
 
 variable "vpc1_id" {
-    type = string
+  type = string
 }
 
 variable "vpc2_id" {
-    type = string
+  type = string
 }
 
 variable "vpc1-cidr-block" {
