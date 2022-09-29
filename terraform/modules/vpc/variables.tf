@@ -30,5 +30,8 @@ variable "vpc_peering_namespace" {
 
 variable "region" {
   type = string
-  
+}
+
+variable "vpn_group_sg_id" {
+  type = string
 }

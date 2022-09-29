@@ -30,3 +30,15 @@ variable "vpc_peer_owner_id" {
 variable "vpc_peering_namespace" {
   type = string
 }
+
+variable "type" {
+    type = string
+}
+
+variable "key" {
+    type = string
+}
+
+# variable "" {
+  
+# }
