@@ -39,6 +39,6 @@ variable "key" {
   type = string
 }
 
-# variable "" {
-
-# }
+variable "cluster_name" {
+  type = string
+}

@@ -18,3 +18,6 @@ vpc_peering_namespace = "shemer-task3-peering"
 type = "t2.micro"
 key  = "key-for-task"
 
+#ecs & autoscaling group
+cluster_name = "default"
+
