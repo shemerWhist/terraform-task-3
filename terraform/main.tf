@@ -44,16 +44,16 @@ module "sg" {
   vpc2-cidr-block = var.vpc2_cidr_block
 }
 
-module "asg" {
-  source = "./modules/asg"
+# module "asg" {
+#   source = "./modules/asg"
 
-  ami                  = data.aws_ami.amazon-linux-2.id
-  vpc2_private_subnets = module.vpc.vpc2_private_subnets
-  instance_type        = var.type
-  key                  = var.key
-  private_vpc2_sg_id   = module.sg.private_vpc2_sg_id
-  cluster_name         = var.cluster_name
-}
+#   ami                  = data.aws_ami.amazon-linux-2.id
+#   vpc2_private_subnets = module.vpc.vpc2_private_subnets
+#   instance_type        = var.type
+#   key                  = var.key
+#   private_vpc2_sg_id   = module.sg.private_vpc2_sg_id
+#   cluster_name         = var.cluster_name
+# }
 
 # find and filter the right ami in the region
 data "aws_ami" "amazon-linux-2" {

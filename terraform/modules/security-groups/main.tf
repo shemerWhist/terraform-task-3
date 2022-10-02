@@ -83,15 +83,6 @@ resource "aws_security_group_rule" "public-in-ICMP" {
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = aws_security_group.public-group.id
 }
-# resource "aws_security_group_rule" "public-in-vpn-access" {
-#   type              = "ingress"
-#   from_port         = 443
-#   to_port           = 443
-#   protocol          = "UDP"
-#   cidr_blocks       = ["0.0.0.0/0"]
-#   security_group_id = aws_security_group.public-group.id
-# }
-
 
 
 # private security group vpc1
