@@ -7,14 +7,6 @@ data "aws_acm_certificate" "client" {
   domain = "client1.domain.tld"
 }
 
-## need to create certificates and import them to AWS ACM using terraform 
-# data "aws_acm_certificate" "server" {
-#   domain = "server"
-# }
-# data "aws_acm_certificate" "client" {
-#   domain = "client1.domain.tld"
-# }
-
 resource "aws_ec2_client_vpn_authorization_rule" "vpn_auth_rule" {
   client_vpn_endpoint_id   = module.vpn.ec2_client_vpn_endpoint_id
   target_network_cidr      = var.vpc1_cidr_block
@@ -44,3 +36,14 @@ resource "aws_cloudwatch_log_group" "vpn_connection" {
     Environment = "${terraform.workspace}"
   }
 }
+
+
+
+
+## need to create certificates and import them to AWS ACM using terraform 
+# data "aws_acm_certificate" "server" {
+#   domain = "server"
+# }
+# data "aws_acm_certificate" "client" {
+#   domain = "client1.domain.tld"
+# }
